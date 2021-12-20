@@ -1,0 +1,67 @@
+print("first student marks")
+sub_1=int(input("enter marks of maths"))
+sub_1=int(input("enter marks of physics"))
+sub_1=int(input("enter marks of chemistry"))
+perc_sub_1=(sub1+sub1+sub1)*100/300
+data=0
+if(perc>85):
+    remarks_1="Distinction"
+    data+=20
+else:
+        remarks="without Distinction"
+print("second student marks")
+sub_2=int(input("enter marks of maths"))
+sub_2=int(input("enter marks of physics"))
+sub_2=int(input("enter marks of chemistry"))
+perc_sub_2=(sub2+sub2+sub2)*100/300
+if(perc>85):
+    remarks_2="Distinction"
+    data+=20
+else:
+        remarks="without Distinction"
+print("third student marks")
+sub3=int(input("enter marks of maths"))
+sub3=int(input("enter marks of physics"))
+sub3=int(input("enter marks of chemistry"))
+perc_sub_3=(sub3+sub3+sub3)*100/300
+if(perc>85):
+    remarks_3="Distinction"
+    data+=20
+else:
+        remarks="without Distinction"
+
+print("fourth student marks")
+sub4=int(input("enter marks of maths"))
+sub4=int(input("enter marks of physics"))
+sub4=int(input("enter marks of chemistry"))
+perc_sub_4=(sub4+sub4+sub4)*100/300
+if(perc>85):
+    remarks_4="Distinction"
+    data+=20
+else:
+        remarks="without Distinction"
+print("fifth student marks")
+sub5=int(input("enter marks of maths"))
+sub5=int(input("enter marks of physics"))
+sub5=int(input("enter marks of chemistry"))
+perc_sub_5=(sub5+sub5+sub5)*100/300
+if(perc>85):
+    remarks_5="Distinction"
+    data+=20
+else:
+        remarks_5="without Distinction"
+        data=+20
+        
+        # Import libraries
+from matplotlib import pyplot as plt
+import numpy as np
+Remarks=["Student with Distinction","Student without Distinction"]
+data_i=100-data
+data_f=[data,data_i]
+# Creating plot
+fig = plt.figure(figsize =(10, 7))
+plt.pie(data_f, labels = Remarks)
+print("PIE CHART")
+plt.legend(title="Distinction")
+# show plot
+plt.show()    
